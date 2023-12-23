@@ -1,0 +1,22 @@
+{
+  "name": "MAGIC-MOA",
+  "description": "MULTIDEVICE BY AMEEN-SER",
+  "repository": "https://github.com/AmeenRepo/Magic-Hoa",
+  "logo": "https://i.ibb.co/JvvB8Y7/aad0f79f6aaf.jpg",
+  "keywords": ["BOT", "WHATSAPP", "WHATSAPP-BOT", "MAGIC-MOA", "AMEEN-SER", "AMEEN"],
+  "stack": "container",
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick.git"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    }
+  ]
+}
