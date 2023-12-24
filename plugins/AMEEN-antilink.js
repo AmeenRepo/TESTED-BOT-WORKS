@@ -14,10 +14,10 @@ export async function before(m, {conn, isAdmin, isBotAdmin }) {
             const linkThisGroup = `https://chat.whatsapp.com/${await this.groupInviteCode(m.chat)}`
             if (m.text.includes(linkThisGroup)) return !0
         }
-        await conn.reply(m.chat, `*🤍 MAGIC MOA 🤍Link Detected*
+        await conn.reply(m.chat, `*🤍 DURGA MD 🤍Link Detected*
             
-🤍 MAGIC MOA 🤍Team doesn't allow links from other groups. 
- 🤍 MAGIC MOA 🤍 WA BOT *@${m.sender.split('@')[0]}*  Will Be Kicked Out From The Group ㋡  ${isBotAdmin ? '' : '\n\n🤍 MAGIC MOA 🤍 Not An Admin So I Cannot fuckoff 😉 You :"v'}`, null, { mentions: [m.sender] } )
+🤍 DURGA MD 🤍Team doesn't allow links from other groups. 
+ 🤍 DURGA MD 🤍 WA BOT *@${m.sender.split('@')[0]}*  Will Be Kicked Out From The Group ㋡  ${isBotAdmin ? '' : '\n\n🤍 DURGA MD 🤍 Not An Admin So I Cannot fuckoff 😉 You :"v'}`, null, { mentions: [m.sender] } )
         if (isBotAdmin && chat.antiLink) {
         	await conn.sendMessage(m.chat, { delete: m.key })
             await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
