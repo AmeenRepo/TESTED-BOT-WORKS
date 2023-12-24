@@ -23,7 +23,7 @@ const delay = ms => isNumber(ms) && new Promise(resolve => setTimeout(function (
  * @param {import('@adiwajshing/baileys').BaileysEventMap<unknown>['messages.upsert']} groupsUpdate 
  */
 
-export async function handler (chatUpdate) {
+export async function handler(chatUpdate) {
     this.msgqueque = this.msgqueque || []
     if (!chatUpdate)
         return
@@ -352,7 +352,7 @@ export async function handler (chatUpdate) {
         } catch (e) {
             console.error(e)
         }
-        if (opts['Setting'])
+        if (opts['nyimak'])
             return
         if (!m.fromMe && opts['self'])
             return
@@ -360,7 +360,7 @@ export async function handler (chatUpdate) {
             return
         if (opts['gconly'] && !m.chat.endsWith('g.us'))
             return
-        if (opts['soonly'] && m.chat !== 'status@broadcast')
+        if (opts['swonly'] && m.chat !== 'status@broadcast')
             return
         if (typeof m.text !== 'string')
             m.text = ''
@@ -541,11 +541,11 @@ export async function handler (chatUpdate) {
                 else
                     m.exp += xp
                 if (!isPrems && plugin.diamond && global.db.data.users[m.sender].diamond < plugin.diamond * 1) {
-                     this.reply(m.chat, `Magic-handler  🕊️ Money Finished \n Use The Following Magic-handler  🕊️ Command To Buy Money \n*${usedPrefix}todiamond* <amount`, m)
+                     this.reply(m.chat, `🤍 DURGA-MD 🤍 Money Finished \n Use The Following 🤍 DURGA-MD 🤍 Command To Buy Money \n*${usedPrefix}todiamond* <amount`, m)
                     continue // Limit habis
                 }
                 if (plugin.level > _user.level) {
-                    this.reply(m.chat, `Magic-handler  🕊️ Required Level ${plugin.level} To Use This Magic-handler  🕊️ Command. \nYour Level ${_user.level}`, m)
+                    this.reply(m.chat, `🤍 DURGA-MD 🤍 Required Level ${plugin.level} To Use This 🤍 DURGA-MD 🤍 Command. \nYour Level ${_user.level}`, m)
                     continue // If the level has not been reached
                 }
                 let extra = {
@@ -587,7 +587,7 @@ export async function handler (chatUpdate) {
                             for (let [jid] of global.owner.filter(([number, _, isDeveloper]) => isDeveloper && number)) {
                                 let data = (await conn.onWhatsApp(jid))[0] || {}
                                 if (data.exists)
-                                    m.reply(`*Magic-handler  🕊️ Plugin:* ${m.plugin}\n*Magic-handler  🕊️ Sender:* ${m.sender}\n*Magic-handler  🕊️ Chat:* ${m.chat}\n*Magic-handler  🕊️ Command:* ${usedPrefix}${command} ${args.join(' ')}\nMagic-handler  🕊️ *Error Logs:*\n\n\`\`\`${text}\`\`\``.trim(), data.jid)
+                                    m.reply(`*🤍 DURGA-MD 🤍 Plugin:* ${m.plugin}\n*🤍 DURGA-MD 🤍 Sender:* ${m.sender}\n*🤍 DURGA-MD 🤍 Chat:* ${m.chat}\n*🤍 DURGA-MD 🤍 Command:* ${usedPrefix}${command} ${args.join(' ')}\n🤍 DURGA-MD 🤍 *Error Logs:*\n\n\`\`\`${text}\`\`\``.trim(), data.jid)
                             }
                         m.reply(text)
                     }
@@ -770,7 +770,7 @@ export async function participantsUpdate({ id, participants, action }) {
     }
 }
 /**
- * handler  groups update
+ * handler groups update
  * @param {import('@adiwajshing/baileys').BaileysEventMap<unknown>['groups.update']} groupsUpdate 
  */
 export async function groupsUpdate(groupsUpdate) {
@@ -783,12 +783,12 @@ export async function groupsUpdate(groupsUpdate) {
         if (!chats?.detect) continue
         if (groupUpdate.desc) text = (chats.sDesc || this.sDesc || conn.sDesc || '*_Group Discription Changed To_*\n@desc').replace('@desc', groupUpdate.desc)
         if (groupUpdate.subject) text = (chats.sSubject || this.sSubject || conn.sSubject || '*_Group Subject Changed To_*\n@subject').replace('@subject', groupUpdate.subject)
-        if (groupUpdate.icon) text = (chats.sIcon || this.sIcon || conn.sIcon || '*_Group Icon Changed By Magic-handler  ✅_*').replace('@icon', groupUpdate.icon)
+        if (groupUpdate.icon) text = (chats.sIcon || this.sIcon || conn.sIcon || '*_Group Icon Changed By DURGA-MD ✅_*').replace('@icon', groupUpdate.icon)
         if (groupUpdate.revoke) text = (chats.sRevoke || this.sRevoke || conn.sRevoke || '*_Group Link Changed ! 🤞🏻_\n@revoke').replace('@revoke', groupUpdate.revoke)
-        if (groupUpdate.announce == true) text = (chats.sAnnounceOn || this.sAnnounceOn || conn.sAnnounceOn || '**_Group Closed By Magic Noa☺️_**')
-        if (groupUpdate.announce == false) text = (chats.sAnnounceOff || this.sAnnounceOff || conn.sAnnounceOff || '*_Group Opened By Magic Noa😉_*')
-        if (groupUpdate.restrict == true) text = (chats.sRestrictOn || this.sRestrictOn || conn.sRestrictOn || '*_Group Opened By Magic Noa😉_*')
-        if (groupUpdate.restrict == false) text = (chats.sRestrictOff || this.sRestrictOff || conn.sRestrictOff || '*_Group Closed By Magic Noa☺️_*')
+        if (groupUpdate.announce == true) text = (chats.sAnnounceOn || this.sAnnounceOn || conn.sAnnounceOn || '**_Group Closed By DURGA-MD☺️_**')
+        if (groupUpdate.announce == false) text = (chats.sAnnounceOff || this.sAnnounceOff || conn.sAnnounceOff || '*_Group Opened By DURGA-MD😉_*')
+        if (groupUpdate.restrict == true) text = (chats.sRestrictOn || this.sRestrictOn || conn.sRestrictOn || '*_Group Opened By DURGA-MD😉_*')
+        if (groupUpdate.restrict == false) text = (chats.sRestrictOff || this.sRestrictOff || conn.sRestrictOff || '*_Group Closed By DURGA-MD☺️_*')
         if (!text) continue
         await this.sendMessage(id, { text, mentions: this.parseMention(text) })
     }
@@ -806,7 +806,7 @@ export async function deleteUpdate(message) {
         if (chat.delete)
             return 
             await this.reply(msg.chat, `
-≡  Magic-handler  🕊️ WA BOT deleted A Message.
+≡  🤍 DURGA-MD 🤍 WA BOT deleted A Message.
 ┌─⊷ ★ 𝘼𝙉𝙏𝙄 𝘿𝙀𝙇𝙀𝙏𝙀 ★
 ★ *Number :* @${participant.split`@`[0]} ★
 └─────────────
@@ -824,16 +824,16 @@ export async function deleteUpdate(message) {
 
 global.dfail = (type, m, conn) => {
     let msg = {
-        rowner: '*ᴏɴʟʏ Magic-handler  🕊️ ᴅᴇᴠᴇʟᴏᴘᴇʀ* • ★ This command can only be used by the *Creator of 𝞓𝞛𝞢𝞢𝞜-𝙎𝞢𝞒*',
-        owner: '*ᴏɴʟʏ Magic-handler  🕊️ ᴏᴡɴᴇʀ* • ★ This command can only be used by the *Bot Owner 𝞓𝞛𝞢𝞢𝞜-𝙎𝞢𝞒',
-        mods: '*ᴏɴʟʏ Magic-handler  🕊️ ᴍᴏᴅᴇʀᴀᴛᴏʀ* •★ This function is only for *For Magic-handler  🕊️ Bot moderators*',
-        premium: '*ᴏɴʟʏ Magic-handler  🕊️ ᴘʀᴇᴍɪᴜᴍ User* • ★ This command is for *Magic-handler  🕊️ Premium members only',
-        group: '*Magic-handler  🕊️ ɢʀᴏᴜᴘ ᴄʜᴀᴛ* • ★ This command can only be used in Magic-handler  🕊️ groups',
-        private: '*Magic-handler  🕊️ ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀᴛ* • ★ This command can only be used in the *private chat of the Magic-handler  🕊️ Bot*',
-        admin: '*ᴏɴʟʏ Magic-handler  🕊️ ᴀᴅᴍɪɴ* • ★ This command is only for *Magic-handler  🕊️ Group Admins*',
-        botAdmin: '*ᴏɴʟʏ Magic-handler  🕊️ ʙᴏᴛ ᴀᴅᴍɪɴ* • ★ To use this command I must be *Magic-handler  🕊️ Admin!*',
-        unreg: '*ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ʀᴇɢɪsᴛᴇʀᴇᴅ with Magic-handler  🕊️* • ★ Sign in to Magic-handler  🕊️,use this feature Type do it :\n\n*/reg name.age*\n\n★ Example : *.reg Ameen.Ser*', 
-        restrict: '*ʀᴇsᴛʀɪᴄᴛby Magic-handler  🕊️ WA BOT* • This feature is *disabled*by Magic-handler  🕊️ WA BOT',
+        rowner: '*ᴏɴʟʏ 🤍 DURGA-MD 🤍 ᴅᴇᴠᴇʟᴏᴘᴇʀ* • ★ This command can only be used by the *Creator of 𝞓𝞛𝞢𝞢𝞜-𝙎𝞢𝞒*',
+        owner: '*ᴏɴʟʏ 🤍 DURGA-MD 🤍 ᴏᴡɴᴇʀ* • ★ This command can only be used by the *Bot Owner 𝞓𝞛𝞢𝞢𝞜-𝙎𝞢𝞒',
+        mods: '*ᴏɴʟʏ 🤍 DURGA-MD 🤍 ᴍᴏᴅᴇʀᴀᴛᴏʀ* •★ This function is only for *For 🤍 DURGA-MD 🤍 Bot moderators*',
+        premium: '*ᴏɴʟʏ 🤍 DURGA-MD 🤍 ᴘʀᴇᴍɪᴜᴍ User* • ★ This command is for *🤍 DURGA-MD 🤍 Premium members only',
+        group: '*🤍 DURGA-MD 🤍 ɢʀᴏᴜᴘ ᴄʜᴀᴛ* • ★ This command can only be used in 🤍 DURGA-MD 🤍 groups',
+        private: '*🤍 DURGA-MD 🤍 ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀᴛ* • ★ This command can only be used in the *private chat of the 🤍 DURGA-MD 🤍 Bot*',
+        admin: '*ᴏɴʟʏ 🤍 DURGA-MD 🤍 ᴀᴅᴍɪɴ* • ★ This command is only for *🤍 DURGA-MD 🤍 Group Admins*',
+        botAdmin: '*ᴏɴʟʏ 🤍 DURGA-MD 🤍 ʙᴏᴛ ᴀᴅᴍɪɴ* • ★ To use this command I must be *🤍 DURGA-MD 🤍 Admin!*',
+        unreg: '*ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ʀᴇɢɪsᴛᴇʀᴇᴅ with 🤍 DURGA-MD 🤍* • ★ Sign in to 🤍 DURGA-MD 🤍,use this feature Type do it :\n\n*/reg name.age*\n\n★ Example : *.reg Ameen.Ser*', 
+        restrict: '*ʀᴇsᴛʀɪᴄᴛby 🤍 DURGA-MD 🤍 WA BOT* • This feature is *disabled*by 🤍 DURGA-MD 🤍 WA BOT',
     }[type]
     if (msg) return m.reply(msg)
 }
@@ -841,6 +841,6 @@ global.dfail = (type, m, conn) => {
 let file = global.__filename(import.meta.url, true)
 watchFile(file, async () => {
     unwatchFile(file)
-    console.log(chalk.redBright("Update 'handler .js'"))
-    if (global.reloadhandler ) console.log(await global.reloadhandler ())
+    console.log(chalk.redBright("Update 'handler.js'"))
+    if (global.reloadhandler) console.log(await global.reloadhandler())
 })

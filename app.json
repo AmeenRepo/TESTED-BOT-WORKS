@@ -1,16 +1,12 @@
 {
-  "name": "MAGIC-MOA",
-  "description": "MULTIDEVICE BY AMEEN-SER",
-  "repository": "https://github.com/AmeenRepo/Magic-Hoa",
-  "logo": "https://i.ibb.co/JvvB8Y7/aad0f79f6aaf.jpg",
-  "keywords": ["BOT", "WHATSAPP", "WHATSAPP-BOT", "MAGIC-MOA", "AMEEN-SER", "AMEEN"],
-  "stack": "container",
+  "name": "DURGA-MD",
+  "description": "MD BOT MADE BY AMEEN SER",
+  "repository": "https://github.com/AmeenRepo/DURGA-MD",
+  "logo": "https://replicate.delivery/pbxt/QbP6Fh3ZXwKON9SCB70ERGwwgeeSbztwKIOIzhUeXFkwnFHiA/out.png",
+  "keywords": ["bot", "whatsapp", "whatsapp-bot", "DURGA-MD", "GURU-bot-md", "GURU-bot"],
   "buildpacks": [
     {
       "url": "heroku/nodejs"
-    },
-    {
-      "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick.git"
     },
     {
       "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"

@@ -1,1 +1,77 @@
-const _0x33daaf=_0xb3db;(function(_0x5c85ee,_0x4be3e8){const _0x319b2f=_0xb3db,_0x4d4b7b=_0x5c85ee();while(!![]){try{const _0x108454=parseInt(_0x319b2f(0x16e))/0x1+-parseInt(_0x319b2f(0x133))/0x2*(-parseInt(_0x319b2f(0x143))/0x3)+parseInt(_0x319b2f(0x147))/0x4+-parseInt(_0x319b2f(0x137))/0x5*(-parseInt(_0x319b2f(0x15d))/0x6)+-parseInt(_0x319b2f(0x16b))/0x7*(-parseInt(_0x319b2f(0x155))/0x8)+parseInt(_0x319b2f(0x169))/0x9+-parseInt(_0x319b2f(0x12b))/0xa;if(_0x108454===_0x4be3e8)break;else _0x4d4b7b['push'](_0x4d4b7b['shift']());}catch(_0x3a712c){_0x4d4b7b['push'](_0x4d4b7b['shift']());}}}(_0xb602,0x94b5b));import{watchFile,unwatchFile}from'fs';import _0x5547fe from'chalk';function _0xb602(){const _0x5127d1=['botname','APIKeys','keysZens','fgyt','https://api.neoxr.my.id','?update=','18eSZSOn','random','5VC9rvNx','fgpyp','dmoji','done','kurrxd09','▢\x20Follow\x20on\x20Instagramhttps://www.instagram.com/mr.z_ninja\x0a','https://violetics.pw','prems','cb15ed422c71a2fb','xmoji','8798742uJkBMk','keysxteam','1414HxbLcv','https://api.akuari.my.id','owner','54891nCnEcQ','keysneoxr','http://bochil.ddns.net','c2459db922','dygp','𝞓𝞛𝞢𝞢𝞜-𝙎𝞢𝞒','29167300lVwGtc','https://i.ibb.co/x125MFB/abf1dfc8f937.jpg','igfg','ebb6251cc00f9c63','https://apimu.my.id','https://fg-nrtm.ddns.net','APIs','premium','2159186nzoplZ','🕊️','*_Please\x20Wait...🏷️_*','🤍Magic-Moa\x20By\x20Ameen-Ser🤍','714185EGvRMl','lolkeysapi','🕊Magic-Moa️','mods','true','keysxxx','keysxteammm','https://api.xteam.xyz','error','🤍AMEEN-SER\x20BOTS🤍','floor','5LTV57azwaid7dXfz5fzJu','3mWSnEM','https://api.dhamzxploit.my.id','author','maxwarn','2808032lSbGqY','HIRO','keysneoxrrr','cfALv5','6fb0eff124','916238768108','beta','length','redBright','log','now','fglog','https://chat.whatsapp.com/GVxT4w51GIU3sndNPZGTnw','BrunoSobrino','11216JFXRxT','29d4b59a4aa687ca'];_0xb602=function(){return _0x5127d1;};return _0xb602();}import{fileURLToPath}from'url';import _0x3a569e from'fs';import _0x32e418 from'node-fetch';import _0x46acc9 from'axios';function _0xb3db(_0x202300,_0x4c4e9c){const _0xb6024d=_0xb602();return _0xb3db=function(_0xb3db7c,_0x46b02f){_0xb3db7c=_0xb3db7c-0x129;let _0x4fc0bb=_0xb6024d[_0xb3db7c];return _0x4fc0bb;},_0xb3db(_0x202300,_0x4c4e9c);}global[_0x33daaf(0x16d)]=[[_0x33daaf(0x14c),'𝞓𝞛𝞢𝞢𝞜-𝙎𝞢𝞒',!![]],[_0x33daaf(0x14c),_0x33daaf(0x12a),!![]],['']],global[_0x33daaf(0x13a)]=[_0x33daaf(0x14c),_0x33daaf(0x14c)],global[_0x33daaf(0x166)]=[_0x33daaf(0x14c),_0x33daaf(0x14c),'916238768108'],global[_0x33daaf(0x159)]=[_0x33daaf(0x171),'37CC845916',_0x33daaf(0x14b)],global[_0x33daaf(0x13c)]=keysZens[Math['floor'](keysZens[_0x33daaf(0x14e)]*Math[_0x33daaf(0x15e)]())],global[_0x33daaf(0x13d)]=[_0x33daaf(0x156),_0x33daaf(0x142),_0x33daaf(0x167),'5bd33b276d41d6b4',_0x33daaf(0x148),_0x33daaf(0x163),_0x33daaf(0x12e)],global[_0x33daaf(0x16a)]=keysxteammm[Math[_0x33daaf(0x141)](keysxteammm[_0x33daaf(0x14e)]*Math['random']())],global[_0x33daaf(0x149)]=[_0x33daaf(0x15f),_0x33daaf(0x14a)],global[_0x33daaf(0x16f)]=keysneoxrrr[Math[_0x33daaf(0x141)](keysneoxrrr['length']*Math[_0x33daaf(0x15e)]())],global[_0x33daaf(0x138)]=[_0x33daaf(0x154)],global[_0x33daaf(0x131)]={'xteam':_0x33daaf(0x13e),'dzx':_0x33daaf(0x144),'lol':'https://api.lolhuman.xyz','violetics':_0x33daaf(0x165),'neoxr':_0x33daaf(0x15b),'zenzapis':'https://zenzapis.xyz','akuari':_0x33daaf(0x16c),'akuari2':_0x33daaf(0x12f),'nrtm':_0x33daaf(0x130),'bg':_0x33daaf(0x170),'fgmods':'https://api-fgmods.ddns.net'},global[_0x33daaf(0x158)]={'https://api.xteam.xyz':'d90a9e986e18778b','https://api.lolhuman.xyz':'85faf717d0545d14074659ad','https://api.neoxr.my.id':''+keysneoxr,'https://violetics.pw':_0x33daaf(0x14d),'https://zenzapis.xyz':''+keysxxx,'https://api-fgmods.ddns.net':'fg-dylux'},global[_0x33daaf(0x157)]=_0x33daaf(0x139),global[_0x33daaf(0x132)]=_0x33daaf(0x13b),global['packname']=_0x33daaf(0x136),global[_0x33daaf(0x145)]=_0x33daaf(0x140),global[_0x33daaf(0x12d)]=_0x33daaf(0x164),global[_0x33daaf(0x129)]=_0x33daaf(0x153),global['fgsc']='https://github.com/AmeenRepo/Magic-Moa',global[_0x33daaf(0x15a)]=_0x33daaf(0x153),global[_0x33daaf(0x160)]=_0x33daaf(0x153),global[_0x33daaf(0x152)]=_0x33daaf(0x12c),global['wait']=_0x33daaf(0x135),global['rwait']=_0x33daaf(0x134),global[_0x33daaf(0x161)]='☺️',global[_0x33daaf(0x162)]='✅',global[_0x33daaf(0x13f)]='⚠️',global[_0x33daaf(0x168)]='🥹',global['multiplier']=0x45,global[_0x33daaf(0x146)]='3';let file=fileURLToPath(import.meta['url']);watchFile(file,()=>{const _0x18544b=_0x33daaf;unwatchFile(file),console[_0x18544b(0x150)](_0x5547fe[_0x18544b(0x14f)]('Update\x20\x27config.js\x27')),import(file+_0x18544b(0x15c)+Date[_0x18544b(0x151)]());});
+import { watchFile, unwatchFile } from 'fs'
+import chalk from 'chalk'
+import { fileURLToPath } from 'url'
+import fs from 'fs'
+import fetch from 'node-fetch'
+import axios from 'axios'
+
+
+global.owner = [
+  ['916238768108', '𝞓𝞛𝞢𝞢𝞜-𝙎𝞢𝞒', true],
+  ['916238768108', '𝞓𝞛𝞢𝞢𝞜-𝙎𝞢𝞒', true], 
+  [''] 
+] //Number of owners
+
+global.mods = ['916238768108','916238768108'] 
+global.prems = ['916238768108', '916238768108', '916238768108']
+global.keysZens = ['c2459db922', '37CC845916', '6fb0eff124']
+global.keysxxx = keysZens[Math.floor(keysZens.length * Math.random())]
+global.keysxteammm = ['29d4b59a4aa687ca', '5LTV57azwaid7dXfz5fzJu', 'cb15ed422c71a2fb', '5bd33b276d41d6b4', 'HIRO', 'kurrxd09', 'ebb6251cc00f9c63']
+global.keysxteam = keysxteammm[Math.floor(keysxteammm.length * Math.random())]
+global.keysneoxrrr = ['5VC9rvNx', 'cfALv5']
+global.keysneoxr = keysneoxrrr[Math.floor(keysneoxrrr.length * Math.random())]
+global.lolkeysapi = ['BrunoSobrino']
+
+global.APIs = { // API Prefix
+  // name: 'https://website'
+  xteam: 'https://api.xteam.xyz', 
+  dzx: 'https://api.dhamzxploit.my.id',
+  lol: 'https://api.lolhuman.xyz',
+  violetics: 'https://violetics.pw',
+  neoxr: 'https://api.neoxr.my.id',
+  zenzapis: 'https://zenzapis.xyz',
+  akuari: 'https://api.akuari.my.id',
+  akuari2: 'https://apimu.my.id',
+  nrtm: 'https://fg-nrtm.ddns.net',
+  bg: 'http://bochil.ddns.net',
+  fgmods: 'https://api-fgmods.ddns.net'
+}
+global.APIKeys = { // APIKey Here
+  // 'https://website': 'apikey'
+  'https://api.xteam.xyz': 'd90a9e986e18778b',
+  'https://api.lolhuman.xyz': '85faf717d0545d14074659ad',
+  'https://api.neoxr.my.id': `${keysneoxr}`,	
+  'https://violetics.pw': 'beta',
+  'https://zenzapis.xyz': `${keysxxx}`, 
+  'https://api-fgmods.ddns.net': 'fg-dylux'
+}
+
+// Sticker WM
+global.botname = 'DURGA-MD'
+global.premium = 'true'
+global.packname = 'DURGA BY AMEEN' 
+global.author = '𝞓𝞛𝞢𝞢𝞜-𝙎𝞢𝞒' 
+global.igfg = '▢ Follow on Instagram\nhttps://www.instagram.com/mr.z_ninja\n' 
+global.dygp = 'https://chat.whatsapp.com/GVxT4w51GIU3sndNPZGTnw'
+global.fgsc = 'https://github.com/AmeenRepo/DURGA-MD' 
+global.fgyt = 'https://youtube.com/'
+global.fgpyp = 'https://youtube.com/'
+global.fglog = 'https://raw.githubuser' 
+
+
+global.wait = '*⭐ _Please Wait..._*'
+global.rwait = '🕊️'
+global.dmoji = '😉'
+global.done = '✅'
+global.error = '🦠' 
+global.xmoji = '🔥' 
+
+global.multiplier = 69 
+global.maxwarn = '3' // máxima advertencias
+
+let file = fileURLToPath(import.meta.url)
+watchFile(file, () => {
+  unwatchFile(file)
+  console.log(chalk.redBright("Update 'config.js'"))
+  import(`${file}?update=${Date.now()}`)
+})
