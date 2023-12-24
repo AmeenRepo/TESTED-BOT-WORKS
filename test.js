@@ -1,1 +1,29 @@
-const _0x1ea01c=_0x4741;(function(_0x54da7f,_0x3125b5){const _0x4b4f7b=_0x4741,_0x4fdbce=_0x54da7f();while(!![]){try{const _0x4839f5=-parseInt(_0x4b4f7b(0x113))/0x1+parseInt(_0x4b4f7b(0x11c))/0x2+parseInt(_0x4b4f7b(0x11a))/0x3+-parseInt(_0x4b4f7b(0x117))/0x4+parseInt(_0x4b4f7b(0x120))/0x5+parseInt(_0x4b4f7b(0x122))/0x6+-parseInt(_0x4b4f7b(0x114))/0x7;if(_0x4839f5===_0x3125b5)break;else _0x4fdbce['push'](_0x4fdbce['shift']());}catch(_0x5c5707){_0x4fdbce['push'](_0x4fdbce['shift']());}}}(_0x40da,0xe733b));import _0x3df1d4 from'fs';import _0xbf2035,{dirname}from'path';import _0x6f5733 from'assert';import{spawn}from'child_process';import _0xaa54e2 from'syntax-error';import{fileURLToPath}from'url';function _0x40da(){const _0x50a10a=['.js','resolve','error','push','1153230jbYnqh','5223925ujSAlW','Done','url','7403528HutCBf','length','module','3741585dbjLnZ','log','80180uOMKMy','Checking','join','readdirSync','9115280XzynwV','endsWith','9522294BkGtTM','directories'];_0x40da=function(){return _0x50a10a;};return _0x40da();}import{createRequire}from'module';const __filename=fileURLToPath(import.meta[_0x1ea01c(0x116)]),__dirname=dirname(__filename),require=createRequire(__dirname);function _0x4741(_0x5096ff,_0x23e148){const _0x40da73=_0x40da();return _0x4741=function(_0x4741a,_0x2854f){_0x4741a=_0x4741a-0x111;let _0x58be1d=_0x40da73[_0x4741a];return _0x58be1d;},_0x4741(_0x5096ff,_0x23e148);}let folders=['.',...Object['keys'](require(_0xbf2035['join'](__dirname,'./package.json'))[_0x1ea01c(0x123)])],files=[];for(let folder of folders)for(let file of _0x3df1d4[_0x1ea01c(0x11f)](folder)['filter'](_0x60f458=>_0x60f458[_0x1ea01c(0x121)](_0x1ea01c(0x124))))files[_0x1ea01c(0x112)](_0xbf2035[_0x1ea01c(0x125)](_0xbf2035[_0x1ea01c(0x11e)](folder,file)));for(let file of files){if(file==__filename)continue;console[_0x1ea01c(0x111)](_0x1ea01c(0x11d),file);const error=_0xaa54e2(_0x3df1d4['readFileSync'](file,'utf8'),file,{'sourceType':_0x1ea01c(0x119),'allowReturnOutsideFunction':!![],'allowAwaitOutsideFunction':!![]});if(error)_0x6f5733['ok'](error[_0x1ea01c(0x118)]<0x1,file+'\x0a\x0a'+error);_0x6f5733['ok'](file),console[_0x1ea01c(0x11b)](_0x1ea01c(0x115),file);}
+import fs from 'fs'
+import path, { dirname } from 'path'
+import assert from 'assert'
+import { spawn } from 'child_process'
+import syntaxError from 'syntax-error'
+import { fileURLToPath } from 'url'
+import { createRequire } from 'module'
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
+const require = createRequire(__dirname)
+
+let folders = ['.', ...Object.keys(require(path.join(__dirname, './package.json')).directories)]
+let files = []
+for (let folder of folders)
+    for (let file of fs.readdirSync(folder).filter(v => v.endsWith('.js')))
+        files.push(path.resolve(path.join(folder, file)))
+for (let file of files) {
+    if (file == __filename) continue
+    console.error('Checking', file)
+    const error = syntaxError(fs.readFileSync(file, 'utf8'), file, {
+        sourceType: 'module',
+        allowReturnOutsideFunction: true,
+        allowAwaitOutsideFunction: true
+    })
+    if (error) assert.ok(error.length < 1, file + '\n\n' + error)
+    assert.ok(file)
+    console.log('Done', file)
+}

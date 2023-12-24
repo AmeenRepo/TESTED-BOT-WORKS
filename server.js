@@ -1,1 +1,58 @@
-(function(_0x356bff,_0x5d7717){const _0x399355=_0x364c,_0x4ef91b=_0x356bff();while(!![]){try{const _0x120f06=parseInt(_0x399355(0x195))/0x1+-parseInt(_0x399355(0x1aa))/0x2*(parseInt(_0x399355(0x1a8))/0x3)+-parseInt(_0x399355(0x194))/0x4+parseInt(_0x399355(0x1a5))/0x5*(-parseInt(_0x399355(0x19a))/0x6)+parseInt(_0x399355(0x1ae))/0x7+-parseInt(_0x399355(0x19e))/0x8+-parseInt(_0x399355(0x1a2))/0x9*(-parseInt(_0x399355(0x1a0))/0xa);if(_0x120f06===_0x5d7717)break;else _0x4ef91b['push'](_0x4ef91b['shift']());}catch(_0x50790d){_0x4ef91b['push'](_0x4ef91b['shift']());}}}(_0x53af,0xd683c));function _0x53af(){const _0x2bdbb3=['REPL_OWNER','image/png','2955APVlyZ','emit','972sjhyyS','connection.update','https://','error','1831375axirWX','test','344928OoGhVZ','1457555XTtVsB','content-type','app','use','setHeader','10478172GUmfBb','catch','end','invalid','738456UXALKJ','.repl.co','15630830AzqSly','listen','9BcSIsR','env','server','5KMVZIv'];_0x53af=function(){return _0x2bdbb3;};return _0x53af();}import _0x39f2d7 from'express';import{createServer}from'http';import _0x1e1f6b from'path';import{Socket}from'socket.io';function _0x364c(_0x3d2500,_0x5a102c){const _0x53afef=_0x53af();return _0x364c=function(_0x364cf9,_0x1b2a70){_0x364cf9=_0x364cf9-0x193;let _0xbb766c=_0x53afef[_0x364cf9];return _0xbb766c;},_0x364c(_0x3d2500,_0x5a102c);}import{toBuffer}from'qrcode';import _0x29e7f3 from'node-fetch';function connect(_0x51ccb9,_0x2d5d91){const _0xddaa09=_0x364c;let _0xdcb9e0=global[_0xddaa09(0x197)]=_0x39f2d7();console['log'](_0xdcb9e0);let _0x46c76f=global[_0xddaa09(0x1a4)]=createServer(_0xdcb9e0),_0x305e54=_0xddaa09(0x19d);_0x51ccb9['ev']['on'](_0xddaa09(0x1ab),function _0x3c449b({qr:_0x39700b}){if(_0x39700b)_0x305e54=_0x39700b;}),_0xdcb9e0[_0xddaa09(0x198)](async(_0x321862,_0x29f060)=>{const _0x13e468=_0xddaa09;_0x29f060[_0x13e468(0x199)](_0x13e468(0x196),_0x13e468(0x1a7)),_0x29f060[_0x13e468(0x19c)](await toBuffer(_0x305e54));}),_0x46c76f[_0xddaa09(0x1a1)](_0x2d5d91,()=>{console['log']('App\x20listened\x20on\x20port',_0x2d5d91);if(opts['keepalive'])keepAlive();});}function pipeEmit(_0x2a5525,_0x15b224,_0x3daa27=''){const _0x131dbe=_0x364c;let _0x3ad73d=_0x2a5525['emit'];return _0x2a5525[_0x131dbe(0x1a9)]=function(_0x441313,..._0xea38d4){const _0xa66319=_0x131dbe;_0x3ad73d[_0xa66319(0x1a9)](_0x441313,..._0xea38d4),_0x15b224['emit'](_0x3daa27+_0x441313,..._0xea38d4);},{'unpipeEmit'(){const _0x11fd6b=_0x131dbe;_0x2a5525[_0x11fd6b(0x1a9)]=_0x3ad73d;}};}function keepAlive(){const _0x543676=_0x364c,_0x5efa53=_0x543676(0x1ac)+process[_0x543676(0x1a3)]['REPL_SLUG']+'.'+process[_0x543676(0x1a3)][_0x543676(0x1a6)]+_0x543676(0x19f);if(/(\/\/|\.)undefined\./[_0x543676(0x193)](_0x5efa53))return;setInterval(()=>{const _0x264f04=_0x543676;_0x29e7f3(_0x5efa53)[_0x264f04(0x19b)](console[_0x264f04(0x1ad)]);},0x5*0x3e8*0x3c);}export default connect;
+import express from 'express'
+import { createServer } from 'http'
+import path from 'path'
+import { Socket } from 'socket.io'
+import { toBuffer } from 'qrcode'
+import fetch from 'node-fetch'
+
+function connect(conn, PORT) {
+    let app = global.app = express()
+    console.log(app)
+    let server = global.server = createServer(app)
+    // app.use(express.static(path.join(__dirname, 'views')))
+    let _qr = 'invalid'
+
+    conn.ev.on('connection.update', function appQR({ qr }) {
+        if (qr) _qr = qr
+    })
+
+    app.use(async (req, res) => {
+        res.setHeader('content-type', 'image/png')
+        res.end(await toBuffer(_qr))
+    })
+
+    // let io = new Socket(server)
+    // io.on('connection', socket => {
+    //     let { unpipeEmit } = pipeEmit(conn, socket, 'conn-')
+    //     socket.on('disconnect', unpipeEmit)
+    // })
+
+    server.listen(PORT, () => {
+        console.log('App listened on port', PORT)
+        if (opts['keepalive']) keepAlive()
+    })
+}
+
+function pipeEmit(event, event2, prefix = '') {
+    let old = event.emit
+    event.emit = function (event, ...args) {
+        old.emit(event, ...args)
+        event2.emit(prefix + event, ...args)
+    }
+    return {
+        unpipeEmit() {
+            event.emit = old
+        }
+    }
+}
+
+function keepAlive() {
+    const url = `https://${process.env.REPL_SLUG}.${process.env.REPL_OWNER}.repl.co`
+    if (/(\/\/|\.)undefined\./.test(url)) return
+    setInterval(() => {
+        fetch(url).catch(console.error)
+    }, 5 * 1000 * 60)
+}
+
+
+export default connect
