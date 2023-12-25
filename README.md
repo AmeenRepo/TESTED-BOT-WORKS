@@ -11,4 +11,4 @@
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/AmeenRepo/DURGA-MD)
 
 ### DEPLOY ON RENDER
-<a herf='https://dashboard.render.com/register' target="_blank"><img alt='DEPLOY ON RENDER' src='https://img.shields.io/badge/Scan_qr-100000?style=for-the-badge&logo=render&logoColor=white&labelColor=black&color=black'/>
+<a herf='https://dashboard.render.com/register' target="_blank"><img alt='DEPLOY ON RENDER' src='https://img.shields.io/badge/DEPLOY_ON_RENDER-100000?style=for-the-badge&logo=render&logoColor=white&labelColor=black&color=black'/>
