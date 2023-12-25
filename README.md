@@ -8,4 +8,7 @@
 <a href='https://github.com/AmeenRepo/DURGA-MD/fork' target="_blank"><img alt='💝Fork Repo💝' src='https://img.shields.io/badge/Fork Repo-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=red'/></a>
 
 ### DEPLOY ON HEROKU
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/AmeenRepo/DURGA-MD)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+### DEPLOY ON RENDER
+[![Deploy](https://www.rendercdn.com/deploy/button.svg)](https://dashboard.render.com/register)
