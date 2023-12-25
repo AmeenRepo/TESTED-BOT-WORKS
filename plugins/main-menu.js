@@ -7,7 +7,7 @@ let readMore = more.repeat(850)
 let lkr = `╭───❮  *❤️ DURGA-MD ❤️* ❯
 │    ⚠️ MADE BY
 │        AMEEN-SER ⚠️
-╰────────────⦁`
+╰────────────⦁
 ╭───❮ *🤍BOT MENU🤍* ❯
 │ _${usedPrefix}ping_
 │ _${usedPrefix}uptime_
